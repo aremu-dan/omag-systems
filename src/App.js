@@ -34,10 +34,10 @@ function App() {
       <Modal />
 
       {/*  */}
-      <AuthComp />
+      {/* <AuthComp /> */}
 
       {/*  */}
-      {/* <Dashboard /> */}
+      <Dashboard />
 
     </div>
   );

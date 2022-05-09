@@ -18,7 +18,7 @@ function Modal({onLoad, children}) {
   //
   useEffect(()=>{
     const timer = setInterval(() => {
-      // setSplashScreenStyle('splashScreen hide');
+      setSplashScreenStyle('splashScreen hide');
       clearInterval(timer);
     }, 3000);
   }, [])

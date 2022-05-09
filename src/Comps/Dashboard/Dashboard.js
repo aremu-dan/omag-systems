@@ -1,8 +1,18 @@
 import React from 'react'
+// 
+import './Dashboard.css'
+// 
+import SideBar from './SideBar/SideBar'
+import DashboardContents from './DashboardContents/DashboardContents'
 
 function Dashboard() {
   return (
-    <div>Dashboard</div>
+    <div className='Dashboard'>
+      {/*  */}
+      <SideBar />
+      {/*  */}
+      <DashboardContents />
+    </div>
   )
 }
 
