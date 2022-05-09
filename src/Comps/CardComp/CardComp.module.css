@@ -1,0 +1,45 @@
+.Card {
+   position: relative;
+   min-height: 20px;
+   height: fit-content;
+   width: fit-content;
+   border-radius: 5px;
+   color: var(--color_main);
+   overflow: hidden;
+   box-shadow: 5px 5px 10px var(--color_dark);
+}
+.Card::before {
+   content: ' ';
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: var(--color_white);
+   opacity: 1;
+}
+
+.Card .CardTitle,
+.Card .CardContent {
+   position: relative;
+   width: 100%;
+   height: fit-content;
+   z-index: 1;
+}
+.Card .CardTitle::before {
+   content: ' ';
+   position: absolute;
+   left: 4px;
+   bottom: 0px;
+   width: calc(100% - 8px);
+   height: 1px;
+   background-color: var(--color_dim);
+}
+.Card .CardTitle h3 {
+   padding: 10px 0 7px 20px;
+   margin:  0;
+   text-transform: uppercase;
+}
+.Card .CardContent {
+   flex-grow: 1;
+}

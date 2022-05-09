@@ -1,0 +1,180 @@
+:root {
+  --color_main: #7880B5;
+  --color_blue: #6987C9;
+  --color_green: #6BBAEC;
+  --color_pink: #C0A9B0;
+  --color_dim: #BCC4DB;
+  --color_dark: #000;
+  --color_white: #fff;
+  --color_orange: #E0A800;
+  --color_red: #C82333;
+
+  --gradient: linear-gradient(135deg, #bcc4dbff, #c0a9b0ff, #7880b5ff, #6987c9ff, #6bbaecff);
+  --gradient_opac: linear-gradient(135deg, rgba(188, 196, 219, 0.5), rgba(192, 169, 176, 0.5), rgba(120, 128, 181, 0.5), rgba(105, 135, 201, 0.5), rgba(107, 186, 236, 0.5));
+
+  --padding: 0.3rem;
+  --margin: 0.3rem;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 
+    -apple-system, 
+    BlinkMacSystemFont, 
+    'Segoe UI', 
+    'Roboto',
+    'Oxygen', 
+    'Ubuntu', 
+    'Cantarell', 
+    'Fira Sans', 
+    'Droid Sans', 
+    'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  zoom: 1;
+  background: url(./Resources/imgs/omags_bgdiii.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+body::before {
+  content: ' ';
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background: var(--color_blue);
+  opacity: .8;
+  box-sizing: border-box;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
+
+/*  */
+.Modal,
+.splashScreen {
+  position: fixed;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 999;
+  transition: opacity 2s linear 0s, height .3s linear .7s, width .3s linear .7s;
+}
+.splashScreen {
+  overflow-y: auto;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Modal.hide,
+.splashScreen.hide {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+.splashScreen.show,
+.Modal.show {
+  opacity: 1;
+  height: 100vh;
+  width: 100vw;
+}
+.splashScreen::before,
+.Modal::before {
+  content: ' ';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur( 1px );
+  -webkit-backdrop-filter: blur( 1px );
+}
+
+.splashScreen .splashScreenContent,
+.Modal .ModalContent {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.splashScreen .splashScreenContent {
+  height: fit-content;
+  width: fit-content;
+}
+/* .splashScreen .splashScreenContent {} */
+.splashScreen.hide .splashScreenContent,
+.Modal.hide .ModalContent,
+.Modal.hide .ModalClose {
+  display: none;
+}
+.splashScreen,
+.splashScreen .splashScreenContent {
+  cursor: none;
+}
+.Modal .ModalContent,
+.Modal .ModalClose {
+  cursor: pointer;
+}
+.Modal .ModalClose {
+  position: fixed;
+  height: 25px;
+  width: 25px;
+  top: 10px;
+  right: 10px;
+  padding: 0;
+  border-radius: 50%;
+  background: var(--color_red);
+  color: var(--color_white);
+  box-shadow: 2px 2px 5px var(--color_dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  z-index: 2;
+}
+.Modal .ModalClose:hover {
+  color: var(--color_red);
+  background: var(--color_pink);
+  box-shadow: 2px 2px 10px var(--color_green);
+}
+.Modal .ModalClose:active {
+  background: var(--color_dim);
+  box-shadow: 2px 2px 5px var(--color_pink);
+  transform: scale(.85);
+}
+
+
+.loaderBox {
+  position: relative;
+  height: 10vmin;
+  min-height: 150px;
+  width: 10vmin;
+  min-width: 150px;
+  border-width: 2px 0px;
+  border-style: dashed;
+  border-color: var(--color_blue);
+  border-radius: 50%;
+  animation: spin 3s ease-out 0.5s infinite;
+}
+@keyframes spin {
+  from{
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,74 @@
+.AuthComp {
+   position: relative;
+   min-height: 100vh;
+   height: fit-content;
+   width: 100vw;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.SignInComp,
+.SignUpComp,
+.ForgottenPasswordComp {
+   position: relative;
+   width: 80vw;
+   min-width: 250px;
+   max-width: 350px;
+   height: fit-content;
+   max-height: 80vh;
+   opacity: 0;
+   transition: all 1.5s linear;
+}
+
+
+.SignInComp.show,
+.SignUpComp.show,
+.ForgottenPasswordComp.show {
+   opacity: 1;
+}
+
+.SignUpComp form.loading input[type='submit'],
+.SignUpComp form.loading button[type='submit'],
+.SignInComp form.loading input[type='submit'],
+.SignInComp form.loading button[type='submit'],
+.SignUpComp form input[type='submit'] ~ div,
+.SignUpComp form button[type='submit'] ~ div,
+.SignInComp form input[type='submit'] ~ div,
+.SignInComp form button[type='submit'] ~ div {
+   display: none;
+}
+.SignUpComp form input[type='submit'],
+.SignUpComp form button[type='submit'],
+.SignInComp form input[type='submit'],
+.SignInComp form button[type='submit'],
+.SignUpComp form.loading input[type='submit'] ~ div,
+.SignUpComp form.loading button[type='submit'] ~ div,
+.SignInComp form.loading input[type='submit'] ~ div,
+.SignInComp form.loading button[type='submit'] ~ div {
+   display: block;
+}
+
+.SignInComp form div.customs,
+.SignUpComp form div.customs {
+   position: relative;
+   width: calc(100% - 20px);
+   margin-left: 10px;
+   text-align: right;
+   font-size: 12px;
+}
+.SignInComp form div.customs .button,
+.SignUpComp form div.customs .button {
+   padding: 2px 3px;
+   cursor: pointer;
+   text-transform: uppercase;
+   color: var(--color_green);
+   font-size: 13px;
+}
+.SignInComp form div.customs .button:hover,
+.SignUpComp form div.customs .button:hover {
+   color: var(--color_pink);
+   text-shadow: var(--color_green);
+}

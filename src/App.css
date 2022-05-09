@@ -1,0 +1,15 @@
+.App {
+  position: relative;
+  height: fit-content;
+  min-height: 100vh;
+  width: 100vw;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  z-index: 3;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
