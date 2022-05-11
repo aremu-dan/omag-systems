@@ -14,21 +14,52 @@
    position: relative;
    height: 100vh;
    width: 270px;
-   max-width: 100vw;
-   background: red;
+   max-width: 95vw;
+   /* background: url(./../../Resources/imgs/omags_bgdi.jpg); */
+   background-position: center;
+   background-size: cover;
+   /* back */
+   overflow: hidden;
    overflow-y: auto;
-   box-shadow: 0 0 5px 1px var(--color_blue);
+   box-shadow: 0 0 10px 0px var(--color_dark);
    z-index: 2;
 }
 .SideBar:hover {
    box-shadow: 0 0 5px 1px var(--color_dark);
 }
+.SideBar.hide {
+   width: 0;
+}
+.SideBar::before {
+   content: ' ';
+   position: absolute;
+   height: 100vh;
+   width: 100%;
+   background: var(--color_white);
+   opacity: .8;
+   /* backdrop-filter: blur(2px);
+   -webkit-backdrop-filter: blur(2px); */
+}
 
+.SideBar,
+.Contents {
+   transition: width 1.5s;
+}
 
 .Contents {
    position: relative;
    height: 100vh;
    width: 100%;
-   background: yellow;
    overflow-y: auto;
+}
+.Contents::before {
+   content: ' ';
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   background: var(--color_white);
+   opacity: .4;
+
+   background: green;
+   opacity: 1;
 }

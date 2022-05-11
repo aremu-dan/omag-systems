@@ -4,7 +4,7 @@ import './App.css';
 // 
 import Modal from './Comps/Modal/Modal'
 import AuthComp from './Comps/AuthComp/AuthComp'
-import Dashboard from './Comps/Dashboard/Dashboard'
+import DashboardComp from './Comps/Dashboard/DashboardComp'
 // 
 // import logo from './logo.svg';
 
@@ -37,7 +37,7 @@ function App() {
       {/* <AuthComp /> */}
 
       {/*  */}
-      <Dashboard />
+      <DashboardComp />
 
     </div>
   );

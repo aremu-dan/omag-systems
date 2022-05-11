@@ -1,0 +1,15 @@
+.SideBarContentTitle {
+   position: absolute;
+   height: 60px;
+   width: 100%;
+   top: 0;
+   background: var(--color_main);
+   z-index: 2;
+}
+.SideBarContentBody {
+   position: relative;
+   min-height: 100vh;
+   padding-top: 70px;
+   width: 100%;
+   /* background: blue; */
+}

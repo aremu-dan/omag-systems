@@ -4,7 +4,7 @@ function Modal({onLoad, children}) {
   // //
   //
   const [modalStyle, setModalStyle] = useState('Modal hide');
-  const [splashScreenStyle, setSplashScreenStyle] = useState('splashScreen show');
+  const [splashScreenStyle, setSplashScreenStyle] = useState('splashScreen hide');
 
 
   // //
@@ -18,7 +18,7 @@ function Modal({onLoad, children}) {
   //
   useEffect(()=>{
     const timer = setInterval(() => {
-      setSplashScreenStyle('splashScreen hide');
+      // setSplashScreenStyle('splashScreen hide');
       clearInterval(timer);
     }, 3000);
   }, [])

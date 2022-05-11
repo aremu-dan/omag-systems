@@ -1,5 +1,6 @@
 :root {
-  --color_main: #7880B5;
+  --color_main: #2f304f;
+  --color_secondary: #2f4f4f;
   --color_blue: #6987C9;
   --color_green: #6BBAEC;
   --color_pink: #C0A9B0;
@@ -101,6 +102,10 @@ body::before {
   width: 100%;
   backdrop-filter: blur( 1px );
   -webkit-backdrop-filter: blur( 1px );
+}
+.splashScreen::before {
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
 }
 
 .splashScreen .splashScreenContent,

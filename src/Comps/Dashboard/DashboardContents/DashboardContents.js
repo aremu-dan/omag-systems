@@ -2,7 +2,9 @@ import React from 'react'
 
 function Contents() {
   return (
-    <div className='Contents'></div>
+    <div className='Contents'>
+      dckndbscjs sfvjjnscdsjncldskncsncdsncksj vds
+    </div>
   )
 }
 
