@@ -1,0 +1,25 @@
+{
+   "general menu": {
+      "dashboard": {
+         "icon": "fa fa-cloud",
+         "link": "dashboard"
+      },
+      "job bank": {},
+      "service order": {},
+      "job control": {},
+      "service advisor": {},
+      "bookings": {},
+      "customers": {},
+      "vehicles": {},
+      "technicians": {},
+      "products": {},
+      "services": {},
+      "spare parts store": {},
+      "self service bookings": {}
+   },
+   "user settings": {
+      "memos": {},
+      "fund requisition": {},
+      "account settings": {}
+   }
+}

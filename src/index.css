@@ -10,6 +10,7 @@
   --color_orange: #E0A800;
   --color_red: #C82333;
 
+  --gradient_one: linear-gradient(280deg, #2f304f, #6987C9 195%);
   --gradient: linear-gradient(135deg, #bcc4dbff, #c0a9b0ff, #7880b5ff, #6987c9ff, #6bbaecff);
   --gradient_opac: linear-gradient(135deg, rgba(188, 196, 219, 0.5), rgba(192, 169, 176, 0.5), rgba(120, 128, 181, 0.5), rgba(105, 135, 201, 0.5), rgba(107, 186, 236, 0.5));
 
@@ -63,6 +64,25 @@ body::before {
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
 }
+
+/*  */
+::-webkit-scrollbar {
+  width: 5px;
+  background: inherit;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color_dim);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color_white);
+}
+::-webkit-scrollbar,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+}
+
 
 /*  */
 .Modal,

@@ -1,0 +1,142 @@
+{
+   "general menu": [
+      {
+         "title": "dashboard",
+         "icon": "dashboard",
+         "link": "dashboard",
+         "type": "",
+         "role": "",
+         "permission": ""
+      },
+      {
+         "title": "job bank",
+         "icon": "work",
+         "link": "dashboard",
+         "type": "",
+         "role": "",
+         "permission": ""
+      },
+      {
+         "title": "service order",
+         "icon": "shopping_cart",
+         "link": "dashboard",
+         "type": "",
+         "role": "",
+         "permission": ""
+      },
+      {
+         "title": "job control",
+         "icon": "dashboard",
+         "link": "dashboard",
+         "type": "",
+         "role": "",
+         "permission": ""
+      },
+      {
+         "title": "service advisor",
+         "icon": "dashboard",
+         "link": "dashboard",
+         "type": "",
+         "role": "",
+         "permission": ""
+      },
+      {
+         "title": "bookings",
+         "icon": "storage",
+         "link": "dashboard",
+         "type": "",
+         "role": "",
+         "permission": ""
+      },
+      {
+         "title": "customers",
+         "icon": "people",
+         "link": "dashboard",
+         "type": "",
+         "role": "",
+         "permission": ""
+      },
+      {
+         "title": "vehicles",
+         "icon": "directions_car",
+         "link": "dashboard",
+         "type": "",
+         "role": "",
+         "permission": ""
+      },
+      {
+         "title": "technicians",
+         "icon": "person_pin",
+         "link": "dashboard",
+         "type": "",
+         "role": "",
+         "permission": ""
+      },
+      {
+         "title": "products",
+         "icon": "add_shopping_cart",
+         "link": "dashboard",
+         "type": "",
+         "role": "",
+         "permission": ""
+      },
+      {
+         "title": "services",
+         "icon": "store",
+         "link": "dashboard",
+         "type": "",
+         "role": "",
+         "permission": ""
+      },
+      {
+         "title": "spare parts store",
+         "icon": "build",
+         "link": "dashboard",
+         "type": "",
+         "role": "",
+         "permission": ""
+      },
+      {
+         "title": "self service",
+         "icon": "record_voice_over",
+         "link": "dashboard",
+         "type": "",
+         "role": "",
+         "permission": ""
+      }
+   ],
+   "user settings": [
+      {
+         "title": "memos",
+         "icon": "edit",
+         "link": "dashboard",
+         "type": "",
+         "role": "",
+         "permission": ""
+      },
+      {
+         "title": "fund requisition",
+         "icon": "attach_money",
+         "link": "dashboard",
+         "type": "",
+         "role": "",
+         "permission": ""
+      },
+      {
+         "title": "account settings",
+         "icon": "settings",
+         "link": "dashboard",
+         "type": "",
+         "role": "",
+         "permission": ""
+      },
+      {
+         "title": "system settings",
+         "icon": "phonelink_setup",
+         "link": "dashboard",
+         "type": "",
+         "role": "",
+         "permission": ""
+      }
+   ]
+}
